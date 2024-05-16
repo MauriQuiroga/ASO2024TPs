@@ -12,7 +12,7 @@ void *comer_hamburguesa(void *tid)
 	while (1 == 1)
 	{ 
 		while(turno!=(int)tid){
-    // INICIO DE LA ZONA CRÃTICA
+    // INICIO DE LA ZONA CRITICA
 		if (cantidad_restante_hamburguesas > 0)
 		{
 			printf("Hola! soy el hilo(comensal) %d , me voy a comer una hamburguesa ! ya que todavia quedan %d \n", (int) tid, cantidad_restante_hamburguesas);
@@ -25,7 +25,7 @@ void *comer_hamburguesa(void *tid)
 
 			pthread_exit(NULL); // forzar terminacion del hilo
 		}
-    // SALIDA DE LA ZONA CRÃTICA   
+    // SALIDA DE LA ZONA CRITICA   
 		}
 
 	}
